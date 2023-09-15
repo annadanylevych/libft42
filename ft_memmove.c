@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 19:30:43 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/11 18:20:21 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 20:29:43 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,7 +20,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	pdst = (unsigned char *)dst;
 	psrc = (unsigned char *)src;
 	i = 0;
-
+	if(len == 0)
+		return (dst);
 	if (psrc < pdst)
 	{
 		while (*psrc)

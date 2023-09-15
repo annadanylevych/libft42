@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 19:07:21 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/13 12:58:16 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 18:23:34 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s1, unsigned int start, size_t len);
 char	*ft_strjoin(char const  *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif

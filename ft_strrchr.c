@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 17:31:28 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/11 17:50:14 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 20:37:18 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 		i++;
-	while (s[i] != (char)c && i >= 0)
+	if((char)c == '\0')
+		return ((char *)&s[i]);
+	while (s[i] != (char)c && i > 0)
 		i--;
 	if (s[i] == (char)c)
 		return ((char *)&s[i]);

@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 20:38:44 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/12 15:22:58 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 20:41:36 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (len > ft_strlen(s))
+	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start; 
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
