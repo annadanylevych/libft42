@@ -6,13 +6,13 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 17:00:13 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/10 18:14:51 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:52:55 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if(c >= 'a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 		c = c - 32;
 	return (c);
 }

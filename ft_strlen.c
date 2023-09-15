@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 20:06:03 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/08 20:11:21 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:44:50 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,7 +16,7 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while(s[len])
+	while (s[len])
 		len++;
 	return (len);
 }

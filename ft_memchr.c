@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 14:58:38 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/11 17:29:20 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:46:55 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	i = 0;
 	ptr = (unsigned char *)s;
-
 	while (i < n)
 	{
 		if (ptr[i] == (unsigned char)c)

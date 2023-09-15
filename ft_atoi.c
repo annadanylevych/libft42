@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:09:15 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/11 17:52:04 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:16:33 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi(const char *str)
 		if (*str == '-')
 			sign = -1;
 		str++;
-	} 
+	}
 	while (*str >= '0' && *str <= '9')
 	{
 		n = n * 10 + (*str - '0');

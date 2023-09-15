@@ -6,7 +6,7 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 17:17:55 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/15 20:29:35 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:54:17 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
-	if((char)c  == '\0')
-		return((char *)s);
+	if ((char)c == '\0')
+		return ((char *)s);
 	return (0);
 }

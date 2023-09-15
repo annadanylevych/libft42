@@ -6,12 +6,12 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 19:55:51 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/08 20:05:29 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:42:41 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c > 31 && c < 127)
 		return (1);
