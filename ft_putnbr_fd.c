@@ -1,36 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 15:55:08 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/16 23:56:03 by adanylev         ###   ########.fr       */
+/*   Created: 2023/09/16 22:59:13 by adanylev          #+#    #+#             */
+/*   Updated: 2023/09/16 23:36:35 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+static void	recursive_bucle(int n, int fd)
 {
-	size_t	i;
-	size_t	a;
-
-	a = 0;
-	i = 0;
-	if (needle[a] == '\0')
-		return ((char *)haystack);
-	while (i < len && haystack[i])
+	if (n > 9)
 	{
-		while (haystack[i] == needle[a] && i < len)
-		{
-			i++;
-			a++;
-			if (needle[a] == '\0')
-				return ((char *)&haystack[i - a]);
-		}
-		i++;
+		recursive_bucle(n / 10, fd);
+		recursive_bucle(n % 10, fd);
 	}
-	return (0);
+	if (n < 10)
+	{
+		n = n + 48;
+		write(fd, &n, 1);
+	}
+}
+
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n *= -1;
+	}
+	recursive_bucle(n, fd);
 }

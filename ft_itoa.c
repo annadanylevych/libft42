@@ -6,11 +6,12 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 17:40:14 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/16 21:50:42 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/16 21:52:03 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
+
 int	digit(int n)
 {
 	int	i;
@@ -25,6 +26,7 @@ int	digit(int n)
 	}
 	return (i);
 }
+
 char	*ft_putnbr(char *aux, int n)
 {
 	int	i;
@@ -47,14 +49,15 @@ char	*ft_putnbr(char *aux, int n)
 	aux[len] = '\0';
 	return (aux);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*str;
-	
-	if(n == -2147483648)
-		return(ft_strdup("-2147483648"));
-	if(n == 0)
-		return ft_strdup("0");
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
 	str = malloc(sizeof(char) * (digit(n) + 1));
 	if (!str)
 		return (NULL);
