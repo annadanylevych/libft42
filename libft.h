@@ -6,14 +6,13 @@
 /*   By: adanylev <adanylev@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 19:07:21 by adanylev          #+#    #+#             */
-/*   Updated: 2023/09/15 23:25:36 by adanylev         ###   ########.fr       */
+/*   Updated: 2023/09/16 21:10:34 by adanylev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-//# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -46,5 +45,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
+char	*ft_itoa(int n);
 
 #endif
