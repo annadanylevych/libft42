@@ -1,18 +1,31 @@
-Libft
+# Libft
 
-Libft is a foundational project at 42 School designed to create a custom C library, implementing a selection of standard C library functions and some additional utility functions. This project aims to build a deeper understanding of C programming fundamentals, memory management, and function implementation.
+Hey there! Welcome to Libft, my very first programming project at 42 School. This project involves creating a custom library of essential C functions, which means diving into the basics of C programming, memory management, and function implementation. 
 
-Project Overview
+## Project Overview
 
-Libft serves as an introductory project in the 42 curriculum, focusing on recreating essential C functions. This library includes commonly used functions from <string.h>, <stdlib.h>, and other standard headers, providing custom implementations to reinforce core programming concepts.
+Libft is designed to re-create standard C library functions and add a few extras. Since this is my first project, the code might not be perfect—or even close! I’ve kept it exactly as it was from the start to track my progress and see how my skills develop over time. It’s a snapshot of my learning journey in C programming.
 
-Features
+## Features
 
-String Manipulation: Functions for string copying, concatenation, comparison, and length calculation.
-Memory Management: Functions for memory allocation, initialization, and clearing.
-Character Checks: Implementations of character classification functions like isalpha, isdigit, and similar.
-Additional Utilities: Extra helper functions as specified by the project requirements.
+- **String Manipulation**: Functions for string copying, concatenation, comparison, and length calculation.
+- **Memory Management**: Functions for memory allocation, initialization, and clearing.
+- **Character Checks**: Implementations of character classification functions like `isalpha`, `isdigit`, etc.
+- **Additional Utilities**: Some extra helper functions as required by the project guidelines.
 
-Usage
+## Usage
 
-This library can be compiled and included in other C projects to extend functionality. Simply compile using make and link the resulting libft.a archive in your C projects.
+You can compile this library and link it to other C projects. Just run `make` to compile and generate `libft.a`, which can be used to add these functions to your own projects.
+
+## Compilation
+
+To compile the library, run:
+```bash
+make
+```
+
+This will create the `libft.a` static library, ready for use in other C projects.
+
+---
+
+Feel free to explore the code—it’s a work in progress and an early milestone in my programming journey!
